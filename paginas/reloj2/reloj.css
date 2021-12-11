@@ -1,0 +1,95 @@
+
+.container{
+    background-color: aliceblue;
+}
+.header{
+    height: 200px;
+}
+.header h1{
+    color:white;
+    font-size: 30px;
+}
+.contenedor_reloj{
+    width:100%;
+    margin-top: -80px;
+    /* background-color: black; */
+}
+:root{
+    --bl:rgb(255, 255, 255);
+    --gr:rgb(223, 223, 223);
+    --osc:rgb(126, 126, 126);
+}
+.reloj{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:center;
+    width:100%;
+    height:350px;
+    /* border:solid black 1px; */
+    background-color: var(--gr);
+}
+.hora{
+    width:300px;
+    height:150px;
+    border:solid transparent 1px;
+    border-radius: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 40px;
+    font-family: "Quantico";
+    color:blue;
+    background-color: var(--gr);
+    box-shadow: -10px -10px 10px var(--bl),inset 10px 10px 10px var(--osc),
+    inset -10px -10px 10px var(--bl),10px 10px 10px var(--osc);
+}
+.fecha{
+    width:90%;
+    height:50px;
+    border:solid transparent 1px;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-family: "Quantico";
+    font-size: 25px;
+    color: blue;
+    margin-top: 20px;
+    box-shadow: 0 0 6px 2px var(--osc),inset 0 0 4px 5px var(--bl);
+}
+
+@media  (max-width:992px) {
+    .x_menu{
+        display: block;
+        top:5px;
+        right:5px
+    }
+    .ul{
+        position:fixed;
+        width:100%;
+        top:0;
+        left:0;
+        right:0;
+        background: black;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateY(-200%);
+        transition: .5s;
+        z-index: 10;
+    }
+}
+@media (max-width:576px){
+
+.footer{
+    flex-direction: column;
+}
+.copy,.redes{
+   width:100%
+}
+.copy{
+   display: flex;
+}
+.fecha{
+    font-size: 20px;
+}
+}

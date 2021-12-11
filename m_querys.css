@@ -1,0 +1,92 @@
+
+@media  (max-width:992px) {
+    .header{
+        flex-direction: column-reverse;
+    }
+    .x_menu{
+        display: block;
+        top:5px;
+        right:5px
+    }
+    .x_menu i:hover{
+        color:rgb(0, 255, 0)
+    }
+    .logo{
+        margin-left:10%
+    }
+    .ul{
+        position:fixed;
+        width:100%;
+        top:0;
+        left:0;
+        right:0;
+        background: black;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateY(-200%);
+        transition: .5s;
+        z-index: 10;
+    }
+    .ver_ul{
+        transform: translateY(0);
+
+    }
+    .ul li {
+        background: rgb(0, 0, 255);
+        width:90%;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .ul li a{
+        background: rgb(29, 29, 28);
+        width:90%;
+        display: inline-block;
+    }
+    .cont_bars{
+        display: block;
+        right: 10%;
+        cursor: pointer;
+    }
+    .cont_bars i:hover{
+        color:rgb(0, 255, 0)
+    }
+    .header_imagen{
+        width:80px;
+        height:80px;
+        /* border: solid red 1px; */
+        margin-top: 50px;
+    }
+    .imagen{
+        width:100%
+    }
+
+}
+@media (max-width:576px){
+.header_desc{
+    width:100%
+}
+.header_desc h2{
+    font-size: 25px;
+}
+.header_desc h3{
+    font-size: 15px;
+}
+.container section{
+    width:90%
+}
+.aside section{
+    width:100px
+}
+ .footer{
+     flex-direction: column;
+ }
+.copy,.redes{
+    width:100%
+}
+.copy{
+    display: flex;
+}
+.copy p{
+    font-size: 15px;
+}
+}

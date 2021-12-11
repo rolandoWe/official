@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    perspective: 1500px;
+}
+.carta{
+    width:400px;
+    height:500px;
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.cara_uno,.cara_dentro,.centro,.cara_dos,.cara_dos_dentro,.cara_dos_fuera{
+    position: absolute;
+    display: flex;
+   flex-wrap: wrap;
+    top:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+
+}
+.cara_uno{
+    z-index:100;
+    transition: 1.5s;
+    transform-origin: left;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+
+}
+.cara_fuera{
+    margin: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center; 
+    transform-origin: left;
+    background: cadetblue;
+    transform-style: preserve-3d;
+    border:double black 5px;
+    box-sizing: border-box;
+
+}
+.cara_fuera section{
+    width:100px;
+    height:100px;
+    border:solid black 1px
+}
+.cara_fuera h1{
+    width:100%;
+    font-size: 30px;
+    text-align: center;
+}
+.cara_fuera p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.boton{
+    background: coral;
+    width:100%;
+    height:30px;
+    position: absolute;
+    top:0
+}
+.boton:hover{
+cursor:pointer
+}
+.ver_menu{
+    position: absolute;
+    top: 0;
+    left:40%;
+    font-size: 25px;
+    /* margin:50px auto; */
+    border-radius: 5px;
+    cursor: pointer;
+    background: chartreuse;
+    width:100px;
+    height:30px;
+    border:solid black 1px;
+
+}
+.ver_menu:hover{
+    background: brown;
+}
+.cara_dentro{
+    background: white;
+    /* display: none; */
+    /* z-index:90; */
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+
+}
+.cara_dentro section,.centro section,.cara_dos_dentro section{
+    width:150px;
+    height:150px;
+    border:solid red 1px;
+    padding: 2px;
+   margin:0 auto;
+ 
+}
+.cara_dentro h2,.centro h2,.cara_dos_dentro h2{
+margin: 0;
+font-size: 18px;
+text-align: center;
+
+}
+.cara_dentro p,.centro p,.cara_dos_dentro p{
+margin: 0;
+font-size: 18px;
+text-align: center;
+}
+.cara_dentro button,.centro button,.cara_dos_dentro button{
+background: chartreuse;
+font-size: 18px;
+padding: 0 10px;
+margin: 5px;
+border-radius: 5px;
+border:none
+}
+.imagen{
+    width:100px;
+    height:50px;
+    border:solid black 1px;
+    margin: 0 auto;
+}
+.centro{
+    background: linear-gradient(to right,rgb(235, 233, 233)0%,
+    rgb(255, 255, 255)25%,rgb(255, 255, 255)50%,rgb(238, 237, 237)100%);
+}
+.cara_dos{
+    background: rgb(1, 149, 172);
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    transform: rotateY(0deg);
+    transform-origin: right;
+
+}
+.cara_dos_dentro{
+    transform: rotateY(180deg);
+    background: white;
+    transform-style: preserve-3d;
+}
+/* ******* */
+.ver_mn{
+    transform: rotateY(180deg);
+}
+.ver_mn2{
+    transform: rotateY(-180deg);
+}
+.cerrar_mn{
+    position: absolute;
+    right:0;
+    display: inline-block;
+    background: red;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}

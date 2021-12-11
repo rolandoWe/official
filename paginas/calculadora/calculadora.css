@@ -1,0 +1,138 @@
+
+.header{
+    height:150px
+}
+.header h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /* background: rebeccapurple; */
+    width:100%
+}
+.container_calc{
+    width:100%;
+    height:300px;
+    background: rgb(223, 223, 223);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_calc2{
+    width:200px;
+    /* border:solid black 1px; */
+    border-radius: 5px;
+    margin:0;
+    background: rgb(3, 35, 165);
+    padding: 5px;
+    box-shadow: 5px 5px 7px 4px rgb(54, 53, 53);
+}
+.texto_calc{
+    width:100%;
+    height:60px;
+    background-color: black;
+    margin: auto;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    color:rgb(102, 255, 0);
+    box-shadow: 0 0 6px 4px rgb(1, 117, 218) inset;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family:"DotGothic16";
+    line-height: 60px;
+}
+/* Esta clase (.color) es para tomar colores  por codigo*/
+.color{
+    color:#ffffff
+}
+.marca{
+    width:100%;
+    height:20px;
+    /* border:solid black 1px; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    background:linear-gradient(rgb(3, 49, 128),white,rgb(7, 14, 199));
+    box-sizing: border-box;
+    margin:5px 0
+}
+.columnas{
+    display: flex;
+}
+.columnas *{
+    flex:1;
+    margin: 5px;
+    height:30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: rgb(14, 214, 14);
+    box-shadow: 0 0 5px 4px rgb(11, 49, 11) inset;
+    transition: .3s;
+}
+.columnas *:hover{
+    transform:scale(1.1)
+}
+.signo{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 8px 3px rgb(0, 8, 255) inset;
+    color:rgb(0, 0, 0)
+}
+.limpiar{
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 5px 3px rgb(90, 1, 1) inset;
+}
+
+.container{
+    margin: 10px 0;
+}
+
+/* ***************modificando arbol navideño******** */
+/**/.proyectos_arbol{
+    overflow: hidden;
+    /* width:200px; */
+    height:200px;
+display: flex;
+flex-direction: column;
+/**/justify-content: center;
+/**/align-items: center;
+background: black;
+/* padding-bottom: 40px; */
+    /* border:solid red 1px */
+/**/}
+.arbol_span{
+    display: inline-block;
+    width:100%;
+    /* margin-top: -50px; */
+    height:200px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.proyectos_arbol h3{
+    background: rgb(241, 239, 240);
+    margin-top: -40px;
+    color:blue;
+    font-size: 18px;
+    text-align: center;
+}
+/**/.cont_arbol{
+/**/width:400px;
+/**/}
+/**/.proy_arb{
+transform: scale(.3);
+    /* width:100%; */
+    height:200px;
+/**/margin: 0;
+padding: 0;
+/**/}
+.arbol{
+    width: 100%;
+    text-align: center;
+/* transform: scale(.3); */
+
+}
